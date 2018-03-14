@@ -1,0 +1,39 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./index.css">
+<title>demo</title>
+    <script src="js/main.js" charset="utf-8"></script>
+    <script src="js/vue.js"></script>
+</head>
+
+<body  onkeydown="KeySearch()">
+<img src="image/python-powered-w-100x40.png" alt="Logo here" align="left" >
+<div id="app">
+    <div class="header"><h1 class="title">欢迎使用文言文翻译</h1>
+    <!--<div class = "input_image">-->
+        <div class="couplet-button_group">
+            <input type="text" title="输入文言文" placeholder="请输入文言文" class="couplet-input" id="inputText">
+            <!--<script>var input = getInput()</script>-->
+            <button type="button" onclick = "show()" class="couplet-btn">翻译</button>
+        </div>
+    </div>
+    <!--一个隐藏的文本框-->
+    <!--<input id="hiddenText" type="text" style="display:none" />-->
+    <div class="content">
+        <!---->
+        <div class="couplet-text couplet-text_up">
+        <div class="couplet-hd" >文言文</div>
+            <!--<p id ="wenyanwen" align="center"></p>-->
+        <div class="couplet-bd" id="wenyanwen"></div>
+    <br>
+    </div>
+        <div class="couplet-text couplet-text_down">
+        <div class="couplet-hd">现代文</div>
+            <!--<p id ="xiandaiwen" align="center"></p>-->
+            <div class="couplet-bd" id="xiandaiwen"></div>
+        </div>
+
+    <div class="footer"></div>
+    </div>
+</div>
+</body>
