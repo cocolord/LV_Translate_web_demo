@@ -10,8 +10,18 @@ function show()
 {
     var a=document.getElementById("inputText").value;
     // alert(a);
-    document.getElementById('wenyanwen').innerText = a;
-    document.getElementById('xiandaiwen').innerText = a;
+    document.getElementsByClassName("couplet-hd").style.display = 'block';
+    var i = document.getElementsByClassName("couplet-hd");
+    if(i.style.display=="none"){
+        i.style.display = "";
+    }
+    else {
+        i.style.display = "none";
+    }
+    document.getElementById('yuanwen').innerText = a;
+    document.getElementById('jiqifanyi').innerText = a;
+    document.getElementById('shenjingwangluo').innerText = a;
+    document.getElementById('zidian').innerText = a;
     return a;
 }
 function str_to_html(str) {
@@ -29,4 +39,17 @@ function KeySearch()
     if (event.keyCode==13)  //回车键的键值为13
         show();
     return ;
+}
+
+function scrollBG(maxSize) {				//这个函数就是滚动背景的核心
+    backgroundOffset = backgroundOffset + 1;			//将背景偏移加1点
+    if (backgroundOffset > maxSize) backgroundOffset = 0;		//如果偏移量超过了最大值则回零
+    bgObject.style.backgroundPosition = "0 " + backgroundOffset;	//设定背景的偏移量，使其生效
+}
+
+function VerticalSlide()
+{
+    var backgroundOffset = 0;				//背景图片的偏移量
+    var bgObject = eval('document.body');				//得到文挡本身的对象
+    var ScrollTimer = window.setInterval("scrollBG(1800)", 64);	//设定每次移动背景之间的间隔
 }
