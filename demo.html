@@ -19,34 +19,35 @@
         <div class="couplet-button_group">
             <input type="text" title="输入文言文" placeholder="请输入文言文" class="couplet-input" id="inputText">
             <!--<script>var input = getInput()</script>-->
-            <button type="button" onclick = "show()" class="couplet-btn">翻译</button>
+            <button type="button" onclick = "show()" class="couplet-btn" >翻译</button>
         </div>
     </div>
 
     <div class="left">
         <div class="couplet-text couplet-text_up">
-            <div class="couplet-hd" style="display:none">原文</div>
+            <div class="couplet-hd" style="display:none" id="display1">原文 </div>
             <div class="couplet-bd" id="yuanwen"></div>
         </div>
         <div class="couplet-text couplet-text_down">
-            <div class="couplet-hd" style="display: none">机器翻译</div>
+            <div class="couplet-hd" style="display: none" id = "display2">机器翻译 </div>
             <!--<p id ="xiandaiwen" align="center"></p>-->
             <div class="couplet-bd" id="jiqifanyi"></div>
         </div>
         <div class="couplet-text couplet-text_down">
-            <div class="couplet-hd" style="display: none">神经网络翻译</div>
+            <div class="couplet-hd" style="display: none" id = "display3">神经网络翻译 </div>
             <!--<p id ="xiandaiwen" align="center"></p>-->
             <div class="couplet-bd" id="shenjingwangluo"></div>
         </div>
     </div>
     <div class="right">
         <div class="couplet-text couplet-text_down">
-            <div class="couplet-hd" style="display: none">字典</div>
+            <div class="couplet-hd" style="display: none" id = "display4">字典 </div>
             <!--<p id ="xiandaiwen" align="center"></p>-->
             <div class="couplet-bd" id="zidian"></div>
         </div>
     </div>
-    <div class="middle"></div>
+    <div class="middle" id = "middle" style="display: none"></div>
+
     <!--一个隐藏的文本框-->
     <!--<input id="hiddenText" type="text" style="display:none" />-->
     <!--原来的content-->
