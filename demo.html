@@ -6,23 +6,22 @@
     <script src="js/main.js" charset="utf-8"></script>
     <script src="js/vue.js"></script>
 </head>
-<!--动态背景，虚线分隔，字体大小-->
 <body  onkeydown="KeySearch()">
 <script>VerticalSlide()</script>
 <!--图片超链接,跳转到主页-->
 <a href = "//www.baidu.com" target="_blank">
-    <img src="image/logo.png" alt="Logo here" align="left"; >
+    <img id = "logo" src="image/logo.png" alt="Logo here" align="left"; >
 </a>
 <div id="app">
     <div class="header"><h1 class="title">欢迎使用文言文翻译</h1>
     <!--<div class = "input_image">-->
         <div class="couplet-button_group">
             <form method="post">
-            <input type="text" title="输入文言文" placeholder="请输入文言文" class="couplet-input" id="inputText" autofocus="autofocus" name="yuanwen">
-                <!--一个隐藏的文本框-->
-                <input id="hiddenText" type="text" style="display:none" />
-            <!--<script>var input = getInput()</script>-->
-            <button type="button" onclick = "show()" class="couplet-btn" >翻译</button>
+                <input type="text" title="输入文言文" placeholder="请输入文言文" class="couplet-input" id="inputText" autofocus="autofocus" name="yuanwen">
+                    <!--一个隐藏的文本框-->
+                    <input id="hiddenText" type="text" style="display:none" />
+                <!--<script>var input = getInput()</script>-->
+                <button type="button" onclick = "show()" class="couplet-btn" >翻译</button>
             </form>
         </div>
     </div>

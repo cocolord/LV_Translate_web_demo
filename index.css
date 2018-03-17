@@ -9,22 +9,86 @@ html, body { height: 100%; }
 }
 
 /*body { background-image: url("image/background2.jpg"),url("image/background2down.jpg"); background-repeat: repeat-x,repeat; background-color: #eee; font-family:shufa, "Helvetica Neue", "PingFang SC", Helvetica, Arial, "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", sans-serif; }*/
-body { background-image: url("image/background2.jpg"),url("image/background2down.jpg"); background-size: cover;background-repeat: no-repeat,repeat; background-color: #eee; font-family:shufa, "Helvetica Neue", "PingFang SC", Helvetica, Arial, "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", sans-serif; }
-#app { max-width: 720px; height: 100%; margin: 0 auto; }
+body {
+    background-image: url("image/background2.jpg"),url("image/background2down.jpg");
+    background-size: cover;
+    background-repeat: no-repeat,repeat;
+    background-color: #eee;
+    font-family:shufa, "Helvetica Neue", "PingFang SC", Helvetica, Arial, "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", sans-serif;
+}
+#app {
+    max-width: 720px;
+    height: 100%;
+    margin: 0 auto;
+}
+.header {
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
 
-.header { padding-top: 10px; margin-bottom: 50px; }
-
-.title { margin-bottom: 60px;margin-top: 150px; font-size: 34px; color: #484848; text-align: center; }
-.search_base{ font-family:"PingFang SC";width: 100%;
-    padding-left: 10px; padding-right: 110px; height: 40px; line-height: 40px; background-color: #fff; border: none; font-size: 20px;
+.title {
+    margin-bottom: 60px;
+    margin-top: 150px;
+    font-size: 34px;
+    color: #484848;
+    text-align: center;
+}
+.search_base{ font-family:"PingFang SC";
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 110px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    border: none;
+    font-size: 20px;
     /*background: url('base.jpg')*/
     }
-.desc { margin-bottom: 20px; color: #898989; font-size: 16px; text-align: center; }
+.desc {
+    margin-bottom: 20px;
+    color: #898989;
+    font-size: 16px;
+    text-align: center;
+}
 
-.couplet-button_group { font-family:shufa;position: relative; margin: 0 auto; max-width: 600px; width: 90%; height: 40px; font-size: 0; background-color: #fff; border-radius: 3px; overflow: hidden; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-.couplet-button_group::after { font-family:shufa;content: " "; display: table; clear: both; }
-.couplet-button_group .couplet-input { font-family:shufa;width: 100%; padding-left: 10px; padding-right: 110px; height: 40px; line-height: 40px; background-color: #fff; border: none; font-size: 20px; }
-.couplet-button_group .couplet-btn { font-family:shufa;position: absolute;top: 0; right: 0; width: 100px; height: 40px; line-height: 40px; color: #fff; outline: none; border: none; font-size: 20px; background: url("image/icon33.gif")}
+.couplet-button_group {
+    font-family:shufa;
+    position: relative;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 90%;
+    height: 40px;
+    font-size: 0;
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.couplet-button_group::after {
+    font-family:shufa;
+    content: " ";
+    display: table;
+    clear: both;
+}
+.couplet-button_group .couplet-input {
+    font-family:shufa;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 110px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    border: none;
+    font-size: 20px; }
+.couplet-button_group .couplet-btn { font-family:shufa;
+    position: absolute;
+    top: 0; right: 0; width: 100px; height: 40px; line-height: 40px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    background: url("image/icon33.gif")
+}
 
 .left
 {
@@ -33,37 +97,42 @@ body { background-image: url("image/background2.jpg"),url("image/background2down
     float: left;
     width: 45%;
     font-size: 20px;
-    height: 100%;
+    height: 53%;
 }
 .middle
 {
     float: left;
     background-size: cover;
     background-image: url("image/asd.png");
+    background-repeat: repeat-y;
     margin:0px;
     padding:0px;;
     width: 10%;
-    height: 77%;
+    height:52%;
 }
 .right {
     /*padding-left: 100px;*/
     float: right;
     width: 45%;
     font-size: 20px;
-    height: 100%;
+    height: 53%;
 }
 .content { padding: 0 50px; margin: 0 auto; max-width: 600px; min-height: 160px; }
 
 @media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) { .content { min-height: 160px; } }
 @media (device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) { .content { min-height: 180px; } }
 @media (device-height: 736px) and (-webkit-min-device-pixel-ratio: 2) { .content { min-height: 200px; } }
-.couplet-text { margin-bottom: 10px; display: flex; }
+.couplet-text {
+    margin-bottom: 10px;
+    display: flex;
+}
 .couplet-text .couplet-hd1
 {
     font-family:"shufa";
     background: url(image/1.gif);
     text-indent: -9999px;
-    width: 80px; height: 80px;
+    width: 60px;
+    height: 60px;
     font-size: 20px;
     padding-right: 10px;
 }
@@ -72,7 +141,8 @@ body { background-image: url("image/background2.jpg"),url("image/background2down
     font-family:"shufa";
     background: url(image/2.gif);
     text-indent: -9999px;
-    width: 80px; height: 80px;
+    width: 60px;
+    height: 60px;
     font-size: 20px;
     padding-right: 10px;
 }
@@ -81,7 +151,8 @@ body { background-image: url("image/background2.jpg"),url("image/background2down
     font-family:"shufa";
     background: url(image/33.gif);
     text-indent: -9999px;
-    width: 80px; height: 80px;
+    width: 60px;
+    height: 60px;
     font-size: 20px;
     padding-right: 10px;
 }
@@ -90,14 +161,37 @@ body { background-image: url("image/background2.jpg"),url("image/background2down
     font-family:"shufa";
     background: url(image/4.gif);
     text-indent: -9999px;
-    width: 80px; height: 80px;
+    width: 60px;
+    height: 60px;
     font-size: 20px;
     padding-right: 10px;
 }
-.couplet-text .couplet-bd { font-family:"华文楷体";font-size:20px;flex: 1; }
-.couplet-text span { margin-right: 5px; margin-bottom: 5px; display: inline-block; width: 34px; height: 34px; line-height: 34px; text-align: center; font-size: 34px; vertical-align: middle; background-image: url("image/asd.jpg"); background-repeat: no-repeat; background-size: cover; }
+.couplet-text .couplet-bd {
+    font-family:"华文楷体";
+    font-size:22px;
+    flex: 1;
+}
+.couplet-text span {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 34px;
+    vertical-align: middle;
+    /*background-image: url("image/asd.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover; }
 
-.footer { position: fixed; bottom: 20px; left: 0; right: 0; width: 100%; text-align: center; }
+.footer { position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
 
 .footer a { color: #333; }
 
